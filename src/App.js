@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { Component }from 'react';
 import './App.css';
+import FirstComponent from './FirstComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>
-        Hello, World.<br/> From <br/> Muhammad Masood Rajpoot <br/> To All.
-      </h1>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return ( 
+      <div className="App-header">
+        <FirstComponent Name="Muhammad Masood" Dept="Ubit" Uni="Karachi University"/>
+        <hr/>
+        <FirstComponent Name="Muhammad Gulfam" Dept="Hamdard University" Uni="Main Campus"/>
+        <hr/>
+        <FirstComponent Name="Ertugrul" Dept="PNEC-NUST" Uni="Carsaz Campus"/>
+        
+      </div>
+     );
+  }
 }
-
+ 
 export default App;

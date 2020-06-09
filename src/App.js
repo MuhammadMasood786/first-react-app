@@ -13,8 +13,7 @@ class App extends Component {
         <FirstComponent Name="Muhammad Masood" Dept="Ubit" Uni="Karachi University"/>
         <hr/>
         <FirstComponent Name="Muhammad Gulfam" Dept="Hamdard University" Uni="Main Campus"/>
-        <hr/>
-        <FirstComponent Name="Ertugrul" Dept="PNEC-NUST" Uni="Carsaz Campus"/>
+        
       </div>
      );
   }

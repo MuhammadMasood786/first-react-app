@@ -1,6 +1,6 @@
 import React, { Component }from 'react';
 import './App.css';
-import FirstComponent from './FirstComponent';
+import Navbar from './FirstComponent';
 
 class App extends Component {
   constructor(props) {
@@ -10,10 +10,7 @@ class App extends Component {
   render() { 
     return ( 
       <div >
-        <FirstComponent Name="Muhammad Masood" Dept="Ubit" Uni="Karachi University"/>
-        <hr/>
-        <FirstComponent Name="Muhammad Gulfam" Dept="Hamdard University" Uni="Main Campus"/>
-        
+        <Navbar/>
       </div>
      );
   }

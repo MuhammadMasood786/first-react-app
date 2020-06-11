@@ -1,4 +1,18 @@
-.Navbarr{
-    background-color: maroon !important;
-    color: white !important;
+.onBulb{
+    font-size: 250px !important;
+    color: yellow !important;
+    margin-right: 10px !important;
+}
+.ofBulb{
+    font-size: 250px !important;
+    color: black !important;
+    margin-right: 10px !important;
+}
+.box{
+    
+    height: 600px;
+    width: 400px !important;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
 }

@@ -1,18 +1,115 @@
-.onBulb{
-    font-size: 250px !important;
-    color: yellow !important;
-    margin-right: 10px !important;
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+h1,
+#incomeExpense,
+h3 {
+  font-family: "Odibee Sans", cursive;
 }
-.ofBulb{
-    font-size: 250px !important;
-    color: black !important;
-    margin-right: 10px !important;
+
+#money-plus {
+  color: #2ecc71;
+  font-size: 20px;
 }
-.box{
-    
-    height: 600px;
-    width: 400px !important;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
+* {
+  box-sizing: border-box;
+}
+#money-minus {
+  color: #c0392b;
+  font-size: 20px;
+}
+.box {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.line {
+  border-right: 1px inset grey;
+  height: 80%;
+  align-items: center;
+}
+#money-plus,
+#money-minus,
+#incomeExpense {
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 300px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+Button{
+  background-color:purple !important;
 }

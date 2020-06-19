@@ -4,10 +4,11 @@ import Balance from './Component/Balance';
 import IncomeExpense from './Component/IncomeExpense';
 import Transaction from './Component/TransactionList';
 import AddTransaction from './Component/AddTransaction';
+import contextProvider from './Context/ContextApi'
 function App() {
  
   return (
-    <div>
+    <contextProvider>
       <div className="container Center">
       <div className="row justify-content-start  ">
           <Header/> 
@@ -25,7 +26,7 @@ function App() {
           <AddTransaction/>
         </div>
       </div>
-    </div>
+    </contextProvider>
   );
 }
 
